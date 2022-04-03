@@ -48,4 +48,17 @@ $posts = [
 
 ];
 
+foreach ($posts as $key => $el) {
+
+    echo $key . "<br>";
+
+    foreach ($el as $text) {
+        echo "Titolo: " . $text['title'] . "<br>";
+        echo "Autore: " . $text['author'] . "<br>";
+        echo "Testo: "  . $text['text'] . "<br>" . "<br>";
+    };
+
+    echo "<br>";
+};
+
 ?>
